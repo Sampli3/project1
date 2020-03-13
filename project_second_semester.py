@@ -46,7 +46,7 @@ def rec(element):
                 return central
             else:
                 if element < spisok[central]:
-                    return search(spisok[:central], central)
+                    return search(spisok[:central], element)
                 else:
                     return  search(spisok[central+1:], element)
     return search(spisok, element)
